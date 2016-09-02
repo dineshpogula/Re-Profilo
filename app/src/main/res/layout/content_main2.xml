@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dinesh.re_profilo.Main2Activity"
+    app:theme="@style/AppTheme"
+    tools:showIn="@layout/activity_main2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="700px"
+        android:src="@drawable/bluebird"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:gravity="top"
+        android:scaleType="fitXY"
+        />
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/editText"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/image" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/editText1"
+        android:textSize="35dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_toEndOf="@+id/imageView" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/email"
+        android:id="@+id/image"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lock"
+        android:id="@+id/imageView"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a new account"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:background="#FFFFFF"
+        android:textAllCaps="false"
+        android:onClick="openSignUp"
+        android:id="@+id/createBTN" />
+
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editText1"
+        android:paddingTop="10dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/facebook"
+        android:id="@+id/view"
+        android:paddingTop="45dp"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
